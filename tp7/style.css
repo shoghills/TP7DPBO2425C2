@@ -1,0 +1,318 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- TEMA WARNA BARU --- */
+/* Primary: Tosca Gelap (#008080) */
+/* Secondary: Tosca Terang (#00AAAA) */
+/* Accent/Background: Abu-abu Muda (#f0f3f5) */
+/* Text: Abu-abu Gelap (#2c3e50) */
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f3f5; /* Light Gray Background */
+    color: #2c3e50; /* Dark Text */
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+header {
+    background-color: #008080; /* Primary Tosca Dark */
+    color: white;
+    text-align: center;
+    padding: 50px 20px 40px;
+    border-bottom: 5px solid #005f5f; /* Darker accent */
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3em;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Navigation */
+nav {
+    background-color: #00AAAA; /* Secondary Tosca Light */
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-right: 1px solid #008080;
+}
+
+nav a:hover {
+    background-color: #008080; /* Primary Tosca Dark on hover */
+    color: #f0f3f5;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: white;
+}
+
+/* Section Titles */
+h2, h3 {
+    color: #008080; /* Primary Tosca Dark */
+    margin-bottom: 25px;
+    font-weight: 700;
+    border-bottom: 3px solid #00AAAA; /* Secondary Tosca Light underline */
+    padding-bottom: 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    background-color: #00AAAA; /* Secondary Tosca Light */
+    color: white;
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #008080;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e6f7f7; /* Hover color with hint of Tosca */
+}
+
+/* Forms */
+form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    margin: 30px 0;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #008080; /* Primary Tosca Dark focus */
+    box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.15);
+}
+
+label {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #00AAAA; /* Secondary Tosca Light */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .btn:hover {
+    background-color: #008080; /* Primary Tosca Dark hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+    background-color: #e74c3c; /* Red */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-success {
+    background-color: #2ecc71; /* Green */
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+.btn-warning {
+    background-color: #f39c12; /* Orange */
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #008080; /* Primary Tosca Dark */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 4px solid #005f5f;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.9;
+}
+
+/* Utility Classes */
+/* ... (Utility classes lainnya tetap sama) ... */
+
+/* Page Content Wrapper */
+.page-wrapper {
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Status Messages */
+.status-message {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.status-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #28a745;
+}
+
+.status-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #dc3545;
+}
+
+/* Table Actions */
+.table-actions {
+    white-space: nowrap;
+}
+
+.table-actions .btn {
+    margin: 2px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        box-shadow: none;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav a {
+        border-right: none;
+        border-bottom: 1px solid #2968a3;
+        text-align: center;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 10px 8px;
+    }
+    
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .action-buttons {
+        padding: 15px;
+    }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.p-20 { padding: 20px; }
+.border-none { border: none; }
+.full-width { width: 100%; }
