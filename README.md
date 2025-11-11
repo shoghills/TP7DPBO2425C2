@@ -1,5 +1,7 @@
 # TP7DPBO2425C2
 
+Saya Rifa Muhammad Danindra dengan Nim 2405981 mengerjakan tugas praktikum 7 dalam mata kuliah Desain Pemrograman Berorientasi Objek untuk keberkahan-Nya maka saya tidak akan melakukan kecurangan seperti yang telah di spesifikasikan Aamiin.
+
 Tema Website : Sewa Apartment
 
 Jadi tema dari website ini adalah penyewaan apartment dimana ada 3 kelas yaitu ruangan atau kamar, tenant yaitu penyewa dan payment yaitu pembayaran antara tenan dan ruangannya
